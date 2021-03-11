@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textName"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:gravity="center_horizontal"
+                android:text="Le Van Tan"
+                android:textColor="#000"
+                android:textSize="30dp" />
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:layout_marginTop="20dp">
+
+                <EditText
+                    android:id="@+id/editTextNickName"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:ems="10"
+                    android:hint="What's your nickname?"
+                    android:inputType="textPersonName" />
+
+                <Button
+                    android:id="@+id/btn_done"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Done" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                app:srcCompat="@android:drawable/btn_star_big_on" />
+
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/Theme.AboutMe.text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text2" />
+
+            <TextView
+                android:id="@+id/textView4"
+                style="@style/Theme.AboutMe.text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text3" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/Theme.AboutMe.text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:text="@string/text4"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/textView6"
+                style="@style/Theme.AboutMe.text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/text5" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
